@@ -1,0 +1,40 @@
+.share_icon {
+    width: 17px;
+    padding: 35px;
+    padding-top: 0px;
+}
+
+.horse-name {
+    font-size: 1em;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btnStyle2 {
+    padding: 20px;
+    width: 170px;
+    background: #FFFFFF;
+    border: 2px solid #28292E;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.05);
+    border-radius: 20px;
+    color: black;
+}
+
+.btnStyle1 {
+    margin: 20px;
+    padding: 20px;
+    width: 170px;
+    border-radius: 20px;
+    border: 2px solid #EDEDEE;
+    background: #FFFFFF;
+    color: black;
+}
+
+.horseStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(-90deg, #FFFFFF 0%, #F8F8F8 100%);
+}

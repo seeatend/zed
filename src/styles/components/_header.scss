@@ -1,0 +1,111 @@
+.app-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    font-family: 'Montserrat-Thin';
+    font-size: 13px;
+    border-bottom: 1px solid #3D3E40;
+
+    .pages {
+
+        a {
+            color: #777;
+            margin-right: 50px;
+
+            &.menu.selected {
+                color: white;
+            }
+        }
+    }
+
+    .start {
+        span {
+            color: white;
+        }
+    }
+
+    &.mobile {
+        justify-content: flex-end;
+        border: none;
+    }
+}
+
+.bm-burger-button {
+    position: fixed;
+    width: 20px;
+    height: 15px;
+    left: 50px;
+    top: 25px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-2%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        width: 95%;
+    }
+    100% {
+        width: 100%;
+    }
+}

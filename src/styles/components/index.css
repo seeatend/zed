@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app-header div > a,
+.footer div> a{
+  color: #929292;
+  text-decoration: none;
+}
+
+.footer div:first-child>a {
+  padding: 10px 25px 10px 25px;
+  font-size: 0.7em;
+}
+
+.app-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px 20px 25px;
+}
+
+.footer div.app-links a>image,
+.footer div.communication-apps a>image {
+  width: 40px;
+}
+
+.app-icon1 {
+  width: 50px;
+  padding-top: 15px;
+}
+.app-icon2 {
+  width: 33px;
+  border-radius: 50%;
+}
+
+.communication-apps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 155px;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.play-btn {
+  margin-top: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  table thead tr th:nth-child(12),
+  table tbody tr td:nth-child(12) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .app-header div>a {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,32 @@
+@font-face{
+  font-family: "Montserrat-Regular";
+  src: url('../fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+@font-face{
+  font-family: "Montserrat-Thin";
+  font-weight: 100;
+  src: url('../fonts/Montserrat-Thin.otf') format('opentype');
+}
+
+@font-face{
+  font-family: "Montserrat-Light";
+  font-weight: 100;
+  src: url('../fonts/Montserrat-Light.otf') format('opentype');
+}
+
+@font-face{
+  font-family: "AvantGardeLT-Book";
+  font-weight: 100;
+  src: url('../fonts/AvantGardeLT-Book.ttf');
+}
+
+@font-face{
+  font-family: "CenturyGothic-Regular";
+  font-weight: 100;
+  src: url('../fonts/CenturyGothic-Regular.ttf');
+}
+
+body {
+  background-color: #2E3137;
+}
