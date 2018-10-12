@@ -3,15 +3,18 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 50px;
-    font-family: 'Montserrat-Thin';
-    font-size: 13px;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
     border-bottom: 1px solid #3D3E40;
 
     .pages {
 
         a {
-            color: #777;
+            color: #484A50;
+            letter-spacing: 0.38px;
+            text-align: center;
             margin-right: 50px;
+            text-decoration: none;
 
             &.menu.selected {
                 color: white;

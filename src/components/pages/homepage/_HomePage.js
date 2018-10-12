@@ -3,7 +3,7 @@ import React from 'react';
 
 import Header from '../../Header/index.js';
 import Footer from '../../Footer/index.js';
-import Zed from '../../../images/zed_logo.png';
+import Zed from '../../../images/zed_logo_wht.svg';
 
 class HomePageContent extends React.Component {
     render() {

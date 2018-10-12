@@ -1,7 +1,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Discord from '../../images/discord_white.png';
+import Discord from '../../images/discord_icon_wht.svg';
 
 class HeaderContent extends React.Component {
     constructor(props){
@@ -33,7 +33,7 @@ class HeaderContent extends React.Component {
                 backgroundImage: this.state.menuOpen?'linear-gradient(to right, #2a2b2c, #2e3035)':'none',
             },
             logo: {
-                width: '23px',
+                width: '20px',
                 marginRight: '20px'
             },
             body: {
