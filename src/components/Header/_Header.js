@@ -159,7 +159,7 @@ class MenuList extends React.Component {
         };
     }
 
-    componentWillReceiveProps(nextProps){
+    UNSAFE_componentWillReceiveProps(nextProps){
         if(nextProps.open !== this.state.open){
             this.setState({open:nextProps.open});
         }
@@ -212,7 +212,7 @@ class MenuButton extends React.Component {
         };
     }
 
-    componentWillReceiveProps(nextProps){
+    UNSAFE_componentWillReceiveProps(nextProps){
         if(nextProps.open !== this.state.open){
             this.setState({open:nextProps.open});
         }
