@@ -10,11 +10,15 @@
     .pages {
 
         a {
-            color: #484A50;
+            color: #7E8D95;
             letter-spacing: 0.38px;
             text-align: center;
             margin-right: 50px;
             text-decoration: none;
+
+            &:hover {
+                color: white;
+            }
 
             &.menu.selected {
                 color: white;

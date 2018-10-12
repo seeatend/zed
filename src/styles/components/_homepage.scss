@@ -1,6 +1,12 @@
+.homepage-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
     display: flex;
-    height: calc(100vh - 146px);
+    flex-grow: 1;
 
     .left-content {
         width: 20%;
@@ -15,7 +21,7 @@ main {
             width: 100%;
             padding-top: 100%;
             position: absolute;
-            top: 77vh;
+            top: calc(100% - 70px);
             border-radius: 50%;
             background-image: linear-gradient(to right, #222428, #2e3139);
         }
@@ -148,8 +154,8 @@ main {
             letter-spacing: 0.9px;
             text-align: center;
             background-image: url("../images/PreSale_Go_Button.svg");
-            background-size: 100% 140%;
-            padding: 23px 79px;
+            background-size: 100% 143%;
+            padding: 27px 86px;
             cursor: pointer;
             //background-color: #25262B;
             //border: 1px solid white;

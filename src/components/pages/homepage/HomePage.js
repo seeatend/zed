@@ -7,7 +7,7 @@ import Footer from '../../Footer/index.js';
 class HomePageContent extends React.Component {
     render() {
         return (
-            <div>
+            <div className="homepage-content">
                 <Header />
 
                 <main>
