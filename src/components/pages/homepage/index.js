@@ -1,8 +1,8 @@
 
 import React from 'react';
 import ismobile from 'is-mobile';
-import HomePageDesktop from './Homepage.js';
-import HomePageMobile from './_Homepage.js';
+import HomePageDesktop from './HomePage.js';
+import HomePageMobile from './_HomePage.js';
 
 class HomePage extends React.Component {
     render() {
