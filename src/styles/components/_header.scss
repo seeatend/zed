@@ -20,6 +20,11 @@
                 color: white;
             }
 
+            &:nth-last-of-type(1), &:nth-last-of-type(2) {
+                color: #47494E;
+                cursor: default;
+            }
+
             &.menu.selected {
                 color: white;
             }
