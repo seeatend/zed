@@ -48,9 +48,9 @@ main {
                 justify-content: center;
                 color: white;
                 font-size: 10px;
-                background-color: #625055;
+                background-color: #5b4f4a;
                 border-radius: 50%;
-                border: 1px solid #F5B4B4
+                border: 1px solid #E8B399;
             }
         }
         .second-line {
@@ -147,9 +147,9 @@ main {
             color: #FFFFFF;
             letter-spacing: 0.9px;
             text-align: center;
-            background-image: url("../images/buy_button.svg");
-            background-size: 100% 100%;
-            padding: 15px 36px 25px;
+            background-image: url("../images/PreSale_Go_Button.svg");
+            background-size: 100% 140%;
+            padding: 23px 79px;
             cursor: pointer;
             //background-color: #25262B;
             //border: 1px solid white;
@@ -208,9 +208,9 @@ main {
                     justify-content: center;
                     position: absolute;
                     right: 20%;
-                    background-color: #625055;
+                    background-color: #5b4f4a;
                     border-radius: 50%;
-                    border: 1px solid #F5B4B4;
+                    border: 1px solid #E8B399;
                 }
             }
         }

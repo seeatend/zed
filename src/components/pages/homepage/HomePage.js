@@ -24,7 +24,7 @@ class HomePageContent extends React.Component {
                         <div className="first-race"></div>
                         <div className="second-race">
                             <div className="one">
-                                <div>47</div>
+                                <div>35</div>
                             </div>
                             <div className="two">
                                 <div>5</div>

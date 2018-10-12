@@ -20,10 +20,14 @@
 
         a {
             margin: 5px 0 0 50px;
-            color: #47494E;
+            color: #819099;
             letter-spacing: 0.21px;
             text-align: center;
             line-height: 11px;
+            text-decoration: none;
+            &:hover {
+                color: white;
+            }
 
             &.menu.selected {
                 color: #aaa;
