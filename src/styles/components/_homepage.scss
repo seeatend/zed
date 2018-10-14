@@ -297,7 +297,7 @@ main {
     &.mobile {
         .left-content {
             width: 100%;
-            height: calc(100vh - 100px);
+            height: calc(100vh - 102px);
 
             &::after {
                 top: 72vh;
