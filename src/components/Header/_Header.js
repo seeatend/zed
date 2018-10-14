@@ -58,7 +58,7 @@ class HeaderContent extends React.Component {
                 margin: '0 10px',
             }
         };
-        const menu = ['PRE SALE','STABLE','STUD SOON','LIVE RACING SOON','RACE LOG SOON'];
+        const menu = ['PRE SALE','RACE ROSTER','STUD SOON','LIVE RACING SOON','RACE LOG SOON'];
         const menuItems = menu.map((val,index)=>{
             return (
                 <MenuItem
@@ -79,6 +79,8 @@ class HeaderContent extends React.Component {
                     <div style={styles.line}/>
                     <MenuItem delay={`${6 * 0.1}s`} onClick={()=>{this.handleLinkClick();}}>
                         <span style={styles.small}>ABOUT</span>
+                        <span style={styles.small}>FAQ</span>
+                        <span style={styles.small}>BLOODLINE</span><br/>
                         <span style={styles.small}>TERMS</span>
                         <span style={styles.small} className="item-disabled">POLICY</span>
                     </MenuItem>
@@ -160,7 +162,7 @@ class MenuList extends React.Component {
         };
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps){
         if(nextProps.open !== this.state.open){
             this.setState({open:nextProps.open});
         }
@@ -213,7 +215,7 @@ class MenuButton extends React.Component {
         };
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps){
         if(nextProps.open !== this.state.open){
             this.setState({open:nextProps.open});
         }

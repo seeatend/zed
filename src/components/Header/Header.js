@@ -11,10 +11,11 @@ class HeaderContent extends React.Component {
         return (
             <header className="app-header">
                 <div className="pages">
-                    <NavLink to='/' activeClassName='menu selected' exact={true}>PRE SALE</NavLink>
-                    <NavLink to='/racing' activeClassName='menu selected' exact={true}>STABLE</NavLink>
+                    <NavLink to='/presale' activeClassName='menu selected' exact={true}>PRE SALE</NavLink>
+                    <NavLink to='/' activeClassName='menu selected' exact={true}>RACE ROSTER</NavLink>
                     <NavLink to='/stud' activeClassName='menu selected' exact={true}>STUD SOON</NavLink>
-                    <NavLink to='/racing' activeClassName='menu selected' exact={true}>LIVE RACING SOON</NavLink>
+                    <NavLink to='/live' activeClassName='menu selected' exact={true}>LIVE RACING SOON</NavLink>
+                    <NavLink to='/race' activeClassName='menu selected' exact={true}>RACE LOG SOON</NavLink>
                 </div>
                 <div className="start">
                     <span>START</span>

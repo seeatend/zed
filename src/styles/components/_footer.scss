@@ -24,12 +24,12 @@
             line-height: 11px;
             text-decoration: none;
 
+            @media screen and (max-width: 1120px) {
+                margin: 5px 0 0 35px;
+            }
+
             &:hover {
                 color: white;
-            }
-            &:last-of-type {
-                color: #47494E;
-                cursor: default;
             }
 
             &.menu.selected {
@@ -59,7 +59,7 @@
                 font-weight: bold;
             }
 
-            @media screen and (min-width: 760px) and (max-width: 800px) {
+            @media screen and (max-width: 1024px) {
                 &:first-of-type {
                     display: none;
                 }
@@ -78,15 +78,23 @@
         border: none;
         background-image: linear-gradient(to right, #222428, #2e3139);
 
-        .open-date {
-            margin: 0 0 0 10px;
-            border-radius: 5px;
-            padding: 5px 10px;
-        }
+        .right {
+            .open-date {
+                margin: 0 0 0 10px;
+                border-radius: 5px;
+                padding: 5px 10px;
+            }
 
-        span {
-            font-family: Montserrat-Thin;
-            letter-spacing: 0.3px;
+            span {
+                font-family: Montserrat-Thin;
+                letter-spacing: 0.3px;
+
+                @media screen and (min-width: 760px) and (max-width: 1024px) {
+                    &:first-of-type {
+                        display: none;
+                    }
+                }
+            }
         }
 
         @media screen and (max-width: 320px) {

@@ -15,11 +15,13 @@ class Footer extends React.Component {
                 <div className="left">
                     <img src={Logo} />
                     <NavLink to='/about' activeClassName='menu selected' exact={true}>ABOUT</NavLink>
-                    <NavLink to='/racing' activeClassName='menu selected' exact={true}>TERMS</NavLink>
-                    <NavLink to='/stud' activeClassName='menu selected' exact={true}>RACE LOG SOON</NavLink>
+                    <NavLink to='/faq' activeClassName='menu selected' exact={true}>FAQ</NavLink>
+                    <NavLink to='/blood' activeClassName='menu selected' exact={true}>BLOODLINE</NavLink>
+                    <NavLink to='/terms' activeClassName='menu selected' exact={true}>TERMS</NavLink>
+                    <NavLink to='/privacy' activeClassName='menu selected' exact={true}>PRIVACY</NavLink>
                 </div>
                 <div className="right">
-                    <span>1000/1000 SUPER RARE Z<span className="symbol">Ξ</span>D THOROUGHBRED AUCTION.</span>
+                    <span>1000/1000 SUPER RARE Z<span className="symbol">Ξ</span>D THOROUGHBRED SALE.</span>
                     <span className="open-date">OPENS NOV 6</span>
                     <img src={Discord} />
                 </div>
