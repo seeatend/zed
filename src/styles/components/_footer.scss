@@ -58,6 +58,12 @@
                 font-family: Lucida Grande;
                 font-weight: bold;
             }
+
+            @media screen and (min-width: 760px) and (max-width: 800px) {
+                &:first-of-type {
+                    display: none;
+                }
+            }
         }
 
         img {
