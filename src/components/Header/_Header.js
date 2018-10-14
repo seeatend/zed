@@ -54,7 +54,7 @@ class HeaderContent extends React.Component {
             },
             small: {
                 fontSize: '11px',
-                color: '#88898c',
+                color: '#819099',
                 margin: '0 10px',
             }
         };
@@ -69,7 +69,7 @@ class HeaderContent extends React.Component {
         });
 
         return(
-            <div>
+            <div className="app-header mobile">
                 <div style={styles.container}>
                     <MenuButton open={this.state.menuOpen} onClick={()=>this.handleMenuClick()} color='white'/>
                     <img style={styles.logo} src={Discord} />
@@ -80,7 +80,7 @@ class HeaderContent extends React.Component {
                     <MenuItem delay={`${6 * 0.1}s`} onClick={()=>{this.handleLinkClick();}}>
                         <span style={styles.small}>ABOUT</span>
                         <span style={styles.small}>TERMS</span>
-                        <span style={styles.small}>POLICY</span>
+                        <span style={styles.small} className="item-disabled">POLICY</span>
                     </MenuItem>
                 </MenuList>
             </div>
@@ -112,7 +112,7 @@ class MenuItem extends React.Component{
                 fontFamily: 'Montserrat-Regular',
                 padding: '1rem 0',
                 cursor: 'pointer',
-                color: this.state.hover? 'white':'#505154',
+                color: this.state.hover? 'white':'#47494E',
                 transition: 'color 0.2s ease-in-out',
                 animation: '0.5s slideIn forwards',
                 animationDelay:this.props.delay,
@@ -129,10 +129,11 @@ class MenuItem extends React.Component{
             }
         };
         return(
-            <div style={styles.container}>
+            <div style={styles.container} className="header-item">
                 <div style={styles.line}/>
                 <div
                     style={styles.menuItem}
+                    className="item-text"
                     onMouseEnter={()=>{this.handleHover();}}
                     onMouseLeave={()=>{this.handleHover();}}
                     onClick={this.props.onClick}
@@ -171,7 +172,7 @@ class MenuList extends React.Component {
                 position: 'absolute',
                 top: 0,
                 left: 0,
-                height: this.state.open? '80%': 0,
+                height: this.state.open? '85%': 0,
                 width: '100vw',
                 display: 'flex',
                 flexDirection: 'column',

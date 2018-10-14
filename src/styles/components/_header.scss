@@ -40,6 +40,17 @@
     &.mobile {
         justify-content: flex-end;
         border: none;
+
+        .header-item {
+            &:nth-child(1), &:nth-child(2) {
+                .item-text {
+                    color: #7E8D95 !important;
+                }
+            }
+        }
+        .item-disabled {
+            color: #47494e !important;
+        }
     }
 }
 
