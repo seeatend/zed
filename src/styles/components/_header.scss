@@ -2,10 +2,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 25px 50px;
+    padding: 2.5rem 5rem;
     font-family: Montserrat-Regular;
     font-size: 1.2rem;
     border-bottom: 1px solid #3D3E40;
+
+    @media screen and (max-width: 1280px) {
+        padding: 2rem 3.5rem;
+    }
 
     .pages {
 
@@ -15,6 +19,10 @@
             text-align: center;
             margin-right: 5rem;
             text-decoration: none;
+
+            @media screen and (max-width: 1280px) {
+                margin-right: 4rem;
+            }
 
             &:hover {
                 color: white;
@@ -40,6 +48,7 @@
     &.mobile {
         justify-content: flex-end;
         border: none;
+        padding: 3rem;
 
         .header-item {
             &:nth-child(1), &:nth-child(2) {
@@ -117,7 +126,7 @@
 
 @keyframes slideIn {
     0% {
-        transform: translateX(-2%);
+        transform: translateX(-10%);
     }
     100% {
         transform: translateX(0);

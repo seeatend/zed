@@ -76,8 +76,7 @@ class HeaderContent extends React.Component {
                 </div>
                 <MenuList open={this.state.menuOpen}>
                     {menuItems}
-                    <div style={styles.line}/>
-                    <MenuItem delay={`${6 * 0.1}s`} onClick={()=>{this.handleLinkClick();}}>
+                    <MenuItem delay={`${5 * 0.1}s`} onClick={()=>{this.handleLinkClick();}}>
                         <span style={styles.small}>ABOUT</span>
                         <span style={styles.small}>FAQ</span>
                         <span style={styles.small}>BLOODLINE</span><br/>
@@ -106,6 +105,7 @@ class MenuItem extends React.Component{
     render(){
         const styles={
             container: {
+                opacity: 0,
                 animation: '1s appear forwards',
                 animationDelay:this.props.delay,
             },
@@ -162,7 +162,7 @@ class MenuList extends React.Component {
         };
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps){
         if(nextProps.open !== this.state.open){
             this.setState({open:nextProps.open});
         }
@@ -215,7 +215,7 @@ class MenuButton extends React.Component {
         };
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps){
         if(nextProps.open !== this.state.open){
             this.setState({open:nextProps.open});
         }
