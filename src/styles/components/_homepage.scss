@@ -38,26 +38,26 @@ main {
 
             &::before {
                 content: '';
-                width: 19px;
-                height: 19px;
+                width: 1.9rem;
+                height: 1.9rem;
                 position: absolute;
-                top: -25px;
+                top: -2.5rem;
                 right: -2px;
                 background-image: radial-gradient(#4a4c51, #2f3136);
                 border-radius: 50%;
             }
             &::after {
                 content: '';
-                width: 19px;
-                height: 19px;
+                width: 1.9rem;
+                height: 1.9rem;
                 position: absolute;
-                top: -19px;
-                right: -9.5px;
+                top: -1.9rem;
+                right: -0.95rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: white;
-                font-size: 10px;
+                font-size: 1rem;
                 background-color: #5b4f4a;
                 border-radius: 50%;
                 border: 1px solid #E8B399;
@@ -71,26 +71,26 @@ main {
 
             &::before {
                 content: '';
-                width: 19px;
-                height: 19px;
+                width: 1.9rem;
+                height: 1.9rem;
                 position: absolute;
-                top: -25px;
+                top: -2.5rem;
                 right: -2px;
                 background-image: radial-gradient(#4a4c51, #2f3136);
                 border-radius: 50%;
             }
             &::after {
                 content: '';
-                width: 19px;
-                height: 19px;
+                width: 1.9rem;
+                height: 1.9rem;
                 position: absolute;
-                top: -19px;
-                right: -9.5px;
+                top: -1.9rem;
+                right: -0.95rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: white;
-                font-size: 10px;
+                font-size: 1rem;
                 background-color: #445e58;
                 border-radius: 50%;
                 border: 1px solid #9BE2BD
@@ -104,26 +104,26 @@ main {
 
             &::before {
                 content: '';
-                width: 19px;
-                height: 19px;
+                width: 1.9rem;
+                height: 1.9rem;
                 position: absolute;
-                top: -25px;
+                top: -2.5rem;
                 right: -2px;
                 background-image: radial-gradient(#4a4c51, #2f3136);
                 border-radius: 50%;
             }
             &::after {
                 content: '';
-                width: 19px;
-                height: 19px;
+                width: 1.9rem;
+                height: 1.9rem;
                 position: absolute;
-                top: -19px;
-                right: -9.5px;
+                top: -1.9rem;
+                right: -0.95rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: white;
-                font-size: 10px;
+                font-size: 1rem;
                 background-color: #625055;
                 border-radius: 50%;
                 border: 1px solid #F5B4B4;
@@ -144,7 +144,7 @@ main {
 
         span.text {
             font-family: Montserrat-Bold;
-            font-size: 36px;
+            font-size: 3.6rem;
             color: #FFFFFF;
             letter-spacing: 0.89px;
             text-align: center;
@@ -153,7 +153,7 @@ main {
 
         span.pre-sale {
             font-family: Montserrat-Medium;
-            font-size: 18px;
+            font-size: 1.8rem;
             color: #FFFFFF;
             letter-spacing: 0.9px;
             text-align: center;
@@ -172,18 +172,9 @@ main {
         }
 
         @media screen and (max-width: 1420px) {
-            span.text {
-                font-size: 30px;
-            }
             span.pre-sale {
-                font-size: 16px;
                 background-size: 100% 123%;
                 padding: 20px 84px 29px;
-            }
-        }
-        @media screen and (max-width: 768px) {
-            span.text {
-                font-size: 32px;
             }
         }
     }
@@ -203,7 +194,7 @@ main {
             display: flex;
             align-items: flex-end;
             color: white;
-            font-size: 11px;
+            font-size: 1.1rem;
             border-right: 10px solid transparent;
             border-image: linear-gradient(to top, #2a2c2f , #2E3137);
             border-image-slice: 1;
@@ -215,8 +206,8 @@ main {
                 position: relative;
 
                 div {
-                    width: 30px;
-                    height: 30px;
+                    width: 3rem;
+                    height: 3rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -232,8 +223,8 @@ main {
                 height: 40%;
                 position: relative;
                 div {
-                    width: 30px;
-                    height: 30px;
+                    width: 3rem;
+                    height: 3rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -250,7 +241,7 @@ main {
             display: flex;
             align-items: flex-end;
             color: white;
-            font-size: 11px;
+            font-size: 1.1rem;
             border-right: 10px solid transparent;
             border-image: linear-gradient(to top, #2a2c2f , #2E3137);
             border-image-slice: 1;
@@ -261,8 +252,8 @@ main {
                 height: 75%;
                 position: relative;
                 div {
-                    width: 30px;
-                    height: 30px;
+                    width: 3rem;
+                    height: 3rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -278,8 +269,8 @@ main {
                 height: 50%;
                 position: relative;
                 div {
-                    width: 30px;
-                    height: 30px;
+                    width: 3rem;
+                    height: 3rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -296,7 +287,7 @@ main {
             display: flex;
             align-items: flex-end;
             color: white;
-            font-size: 11px;
+            font-size: 1.1rem;
             font-family: Montserrat-Thin;
 
             .one {
@@ -304,8 +295,8 @@ main {
                 height: 25%;
                 position: relative;
                 div {
-                    width: 30px;
-                    height: 30px;
+                    width: 3rem;
+                    height: 3rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;

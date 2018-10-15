@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 25px 50px;
     font-family: Montserrat-Regular;
-    font-size: 10px;
+    font-size: 1rem;
     border-top: 1px solid #3D3E40;
   
     .left {
@@ -12,7 +12,7 @@
         align-items: center;
 
         img {
-            width: 38px;
+            width: 3.8rem;
             margin-right: 5px;
         }
 
@@ -67,7 +67,7 @@
         }
 
         img {
-            width: 20px;
+            width: 2rem;
         }
     }
 
@@ -86,10 +86,11 @@
             }
 
             span {
+                display: block;
                 font-family: Montserrat-Thin;
                 letter-spacing: 0.3px;
 
-                @media screen and (min-width: 760px) and (max-width: 1024px) {
+                @media screen and (min-width: 760px) and (max-width: 1023px) {
                     &:first-of-type {
                         display: none;
                     }
