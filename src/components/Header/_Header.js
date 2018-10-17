@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Discord from '../../images/discord_icon_wht.svg';
+import {NavLink} from 'react-router-dom';
 
 class HeaderContent extends React.Component {
     constructor(props){
@@ -77,11 +78,21 @@ class HeaderContent extends React.Component {
                 <MenuList open={this.state.menuOpen}>
                     {menuItems}
                     <MenuItem delay={`${5 * 0.1}s`} onClick={()=>{this.handleLinkClick();}}>
-                        <span style={styles.small}>ABOUT</span>
-                        <span style={styles.small}>FAQ</span>
-                        <span style={styles.small}>BLOODLINE</span><br/>
-                        <span style={styles.small}>TERMS</span>
-                        <span style={styles.small} className="item-disabled">POLICY</span>
+                        <NavLink to='/about' activeClassName='menu selected' exact={true}>
+                            <span style={styles.small}>ABOUT</span>
+                        </NavLink>
+                        <NavLink to='/faq' activeClassName='menu selected' exact={true}>
+                            <span style={styles.small}>FAQ</span>
+                        </NavLink>
+                        <NavLink to='/' activeClassName='menu selected' exact={true}>
+                            <span style={styles.small}>BLOODLINE</span>
+                        </NavLink><br/>
+                        <NavLink to='/terms' activeClassName='menu selected' exact={true}>
+                            <span style={styles.small}>TERMS</span>
+                        </NavLink>
+                        <NavLink to='/policy' activeClassName='menu selected' exact={true}>
+                            <span style={styles.small} className="item-disabled">POLICY</span>
+                        </NavLink>
                     </MenuItem>
                 </MenuList>
             </div>
@@ -162,7 +173,7 @@ class MenuList extends React.Component {
         };
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps){
         if(nextProps.open !== this.state.open){
             this.setState({open:nextProps.open});
         }
@@ -215,7 +226,7 @@ class MenuButton extends React.Component {
         };
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps){
         if(nextProps.open !== this.state.open){
             this.setState({open:nextProps.open});
         }

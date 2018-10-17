@@ -9,9 +9,13 @@ main {
     flex-grow: 1;
 
     .query-content {
-        padding: 50px 100px;
+        padding: 5rem 10rem;
         overflow: auto;
         flex-grow: 1;
         width: 80%;
+
+        @media screen and (max-width: 768px) {
+            padding: 5rem 2rem 2rem;
+        }
     }
 }
