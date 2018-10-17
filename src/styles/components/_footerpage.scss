@@ -1,0 +1,16 @@
+.about-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+
+    .query-content {
+        padding: 50px 100px;
+        overflow: auto;
+        flex-grow: 1;
+    }
+}

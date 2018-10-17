@@ -13,7 +13,9 @@ class Footer extends React.Component {
         return (
             <footer className="app-footer">
                 <div className="left">
-                    <img src={Logo} />
+                    <NavLink to='/' exact={true}>
+                        <img src={Logo} />
+                    </NavLink>
                     <NavLink to='/about' activeClassName='menu selected' exact={true}>ABOUT</NavLink>
                     <NavLink to='/faq' activeClassName='menu selected' exact={true}>FAQ</NavLink>
                     <NavLink to='/blood' activeClassName='menu selected' exact={true}>BLOODLINE</NavLink>
