@@ -1,6 +1,5 @@
 .accordion {
-    width: 100%;
-    max-width: 470px;
+    width: 55%;
 }
 
 .panel {
@@ -12,7 +11,7 @@
         background: none;
         border: none;
         text-align: left;
-        padding: 25px 0;
+        padding: 25px 30px 25px 0;
         transition: color .2s linear;
         cursor: pointer;
 
@@ -24,6 +23,10 @@
         line-height: 18px;
         border-bottom: 1px solid #3D3E40;
 
+        &:hover {
+            color: white;
+        }
+
         &:focus {
             outline: none;
         }
@@ -32,7 +35,7 @@
             position: absolute;
             right: 0;
             top: 50%;
-            width: 22px;
+            width: 1.9rem;
             height: 2px;
             //margin-top: -@height;
             background-color: #3D3E40;
@@ -64,7 +67,7 @@
         transition: height .4s cubic-bezier(.65, .05, .36, 1);
     }
     &__content {
-        padding: 25px 0;
+        padding: 25px 30px 25px 0;
         margin: 0;
         opacity: 0;
         transition: opacity .3s linear .18s;
