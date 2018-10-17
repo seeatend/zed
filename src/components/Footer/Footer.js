@@ -18,7 +18,7 @@ class Footer extends React.Component {
                     </NavLink>
                     <NavLink to='/about' activeClassName='menu selected' exact={true}>ABOUT</NavLink>
                     <NavLink to='/faq' activeClassName='menu selected' exact={true}>FAQ</NavLink>
-                    <NavLink to='/blood' activeClassName='menu selected' exact={true}>BLOODLINE</NavLink>
+                    <NavLink to='/bloodline' activeClassName='menu selected' exact={true}>BLOODLINE</NavLink>
                     <NavLink to='/terms' activeClassName='menu selected' exact={true}>TERMS</NavLink>
                     <NavLink to='/privacy' activeClassName='menu selected' exact={true}>PRIVACY</NavLink>
                 </div>

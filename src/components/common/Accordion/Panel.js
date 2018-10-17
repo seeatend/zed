@@ -33,12 +33,10 @@ class Panel extends React.Component {
         return (
             <div className='panel' role='tabpanel' aria-expanded={isActive}>
                 <button className='panel__label' role='tab' onClick={activateTab}>
-                    {label}
+                    <div dangerouslySetInnerHTML={{__html: label}}/>
                 </button>
                 <div className='panel__inner' style={innerStyle} aria-hidden={!isActive}>
-                    <p className='panel__content'>
-                        {content}
-                    </p>
+                    <div className='panel__content' dangerouslySetInnerHTML={{__html: content}}/>
                 </div>
             </div>
         );

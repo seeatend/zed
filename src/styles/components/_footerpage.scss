@@ -17,5 +17,17 @@ main {
         @media screen and (max-width: 768px) {
             padding: 5rem 2rem 2rem;
         }
+
+        strong {
+            font-family: Montserrat-SemiBold;
+        }
+        b {
+            font-family: Montserrat-Regular;
+        }
+
+        .panel__label strong {
+            font-family: Montserrat-Bold;
+            font-size: 2.5rem;
+        }
     }
 }

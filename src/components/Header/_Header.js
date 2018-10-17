@@ -84,7 +84,7 @@ class HeaderContent extends React.Component {
                         <NavLink to='/faq' activeClassName='menu selected' exact={true}>
                             <span style={styles.small}>FAQ</span>
                         </NavLink>
-                        <NavLink to='/' activeClassName='menu selected' exact={true}>
+                        <NavLink to='/bloodline' activeClassName='menu selected' exact={true}>
                             <span style={styles.small}>BLOODLINE</span>
                         </NavLink><br/>
                         <NavLink to='/terms' activeClassName='menu selected' exact={true}>
