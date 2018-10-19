@@ -1,5 +1,5 @@
 .accordion {
-    width: 75%;
+    width: 85%;
     @media screen and (max-width: 768px) {
         width: 100%;
     }
@@ -84,5 +84,106 @@
     }
     &:not(:last-child) {
         margin-bottom: 3px;
+    }
+}
+
+.roster-content {
+    .accordion {
+        width: 100%;
+    }
+    .panel {
+        border-bottom: 1px solid #3D3E40;
+
+        &[aria-expanded='true'] {
+            background: linear-gradient(180deg, rgba(82,82,82,0.06) 0%, rgba(0,0,0,0.06) 100%);
+
+            .panel__label .stable-content .sold {
+                display: block;
+            }
+        }
+
+        &__label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2.5rem 3rem;
+            border: none;
+
+            &:after, &:before {
+                right: 20px;
+            }
+
+            .stable-content {
+                flex-grow: 1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 1.6rem;
+
+                .sold {
+                    display: none;
+                    border-radius: 2px;
+                    background-color: #797474;
+                    padding: 3px;
+                    color: #2E3137;
+                    font-size: 9px;
+                    font-weight: bold;
+                    letter-spacing: 0.2px;
+                    line-height: 11px;
+                    text-align: center;
+                }
+            }
+
+            .throughbred {
+                width: 25%;
+            }
+        }
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 3rem 6rem;
+            border: none;
+
+            .items-content {
+                flex-grow: 1;
+                border: none;
+                display: flex;
+                justify-content: space-between;
+
+                .inner-item {
+                    text-align: center;
+                    font-family: Montserrat-Thin;
+
+                    .key {
+                        color: #819099;
+                        font-size: 8px;
+                        letter-spacing: 0.17px;
+                        line-height: 10px;
+                        text-align: center;
+                        margin-bottom: 1.2rem;
+                    }
+
+                    .value {
+                        color: #FFFFFF;
+                        font-size: 11px;
+                        letter-spacing: 0.23px;
+                        line-height: 11px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .horse-img {
+                width: 19%;
+                display: flex;
+                justify-content: center;
+
+                img.horse {
+                    width: 9rem;
+                    height: 7rem;
+                }
+            }
+        }
     }
 }

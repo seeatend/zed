@@ -9,6 +9,7 @@ import FAQPage from '../pages/footerpage/FAQPage';
 import TermsPage from '../pages/footerpage/TermsPage';
 import PrivacyPage from '../pages/footerpage/PrivacyPage';
 import BloodlinePage from '../pages/footerpage/BloodlinePage';
+import RosterPage from '../pages/roster/RosterPage';
 
 export const AppRouter = () => (
     <BrowserRouter>
@@ -20,6 +21,7 @@ export const AppRouter = () => (
                 <Route path='/terms' component={TermsPage} exact={true} />
                 <Route path='/privacy' component={PrivacyPage} exact={true} />
                 <Route path='/bloodline' component={BloodlinePage} exact={true} />
+                <Route path='/roster' component={RosterPage} exact={true} />
                 <Route path='/old' component={HomePage_} exact={true} />
                 <Redirect to="/" />
             </Switch>

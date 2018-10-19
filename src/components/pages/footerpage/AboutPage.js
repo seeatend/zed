@@ -3,7 +3,7 @@ import React from 'react';
 
 import Header from '../../Header/index.js';
 import Footer from '../../Footer/index.js';
-import Accordion from '../../common/Accordion/Accordion';
+import Accordion from '../../common/Accordion/footer/Accordion';
 import { AboutQuery } from '../../static/FooterQuery';
 
 class AboutPageContent extends React.Component {

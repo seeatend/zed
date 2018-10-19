@@ -3,7 +3,7 @@ import React from 'react';
 
 import Header from '../../Header/index.js';
 import Footer from '../../Footer/index.js';
-import Accordion from '../../common/Accordion/Accordion';
+import Accordion from '../../common/Accordion/footer/Accordion';
 import { BloodlineQuery } from '../../static/FooterQuery';
 
 class BloodlinPageContent extends React.Component {

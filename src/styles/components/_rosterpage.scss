@@ -1,0 +1,54 @@
+.roster-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        display: block;
+        overflow: auto;
+
+        .main-content {
+            width: 66%;
+            margin: 0 auto 0 20%;
+            padding: 5rem;
+            flex-grow: 1;
+            color: white;
+
+            h2 {
+                font-family: Montserrat-Regular;
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: 0.55px;
+                line-height: 24px;
+                margin-bottom: 28px;
+                padding: 0 3rem;
+            }
+
+            .page-exp {
+                font-family: Montserrat-Thin;
+                font-size: 1.6rem;
+                letter-spacing: 0.53px;
+                line-height: 23px;
+                padding: 0 3rem;
+            }
+
+            .accordion-header {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 3rem;
+                color: #FFFFFF;
+                font-size: 1.4rem;
+                font-weight: 500;
+                letter-spacing: 0.21px;
+                line-height: 18px;
+                border-bottom: 1px solid #3D3E40;
+                margin-top: 5rem;
+
+                & > div:last-of-type {
+                    width: 25%;
+                }
+            }
+        }
+    }
+
+}

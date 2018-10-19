@@ -59,13 +59,38 @@ class HeaderContent extends React.Component {
                 margin: '0 10px',
             }
         };
-        const menu = ['PRE SALE','RACE ROSTER','STUD SOON','LIVE RACING SOON','RACE LOG SOON'];
-        const menuItems = menu.map((val,index)=>{
+        const menu = [
+            {
+                text: 'PRE SALE',
+                link: '/'
+            },
+            {
+                text: 'RACE ROSTER',
+                link: '/roster'
+            },
+            {
+                text: 'STUD SOON',
+                link: '/stud'
+            },
+            {
+                text: 'LIVE RACING SOON',
+                link: '/live-racing'
+            },
+            {
+                text: 'RACE LOG SOON',
+                link: '/race-log'
+            }
+        ];
+        const menuItems = menu.map((item,index)=>{
             return (
                 <MenuItem
                     key={index}
                     delay={`${index * 0.1}s`}
-                    onClick={()=>{this.handleLinkClick();}}>{val}</MenuItem>
+                    onClick={()=>{this.handleLinkClick();}}>
+                    <NavLink to={item.link} activeClassName='menu selected' exact={true}>
+                        {item.text}
+                    </NavLink>
+                </MenuItem>
             );
         });
 

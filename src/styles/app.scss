@@ -1,12 +1,13 @@
 @import '_settings.scss';
 @import '_base.scss';
 
-@import './components/_header.scss';
-@import './components/_footer.scss';
-@import './components/_accordion.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/accordion.scss';
 
-@import './components/_homepage.scss';
+@import 'components/homepage.scss';
 @import 'components/footerpage';
+@import 'components/rosterpage';
 // @import './components/app.css';
 // @import './components/horse.css';
 // @import './components/index.css';
